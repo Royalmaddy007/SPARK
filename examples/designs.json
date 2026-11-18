@@ -1,0 +1,392 @@
+[
+  {
+    "design": "aes_key_mem",
+    "file": "rtl/aes_key_mem.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "d5fbd6124f7b4ac2a50a2dcfaa2a02bfe65f8cb9a387b3488111a257e833ca55"
+  },
+  {
+    "design": "aes_sbox",
+    "file": "rtl/aes_sbox.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "60e7939de3a539176a8514c2e4a477f603173e6ae40512517ed6dfaaa7483fd9"
+  },
+  {
+    "design": "blake2s_core",
+    "file": "rtl/blake2s_core.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "04c766292dca8722a8ea82bcce476c2c9c2c68db3ab8170f98badca99b856f81"
+  },
+  {
+    "design": "chacha_qr",
+    "file": "rtl/chacha_qr.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "d6bef8c91bba0f113fcf3c69cd38aa56b3b788956e6dbcbbb2f760641e2dff65"
+  },
+  {
+    "design": "des3",
+    "file": "rtl/des3.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "7343e81dda9e5a3f5179b7b899375a62f9496dee44c0251e23ff440cd7a8e57e"
+  },
+  {
+    "design": "poly1305_core",
+    "file": "rtl/poly1305_core.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "9950689f7cb955b058ef415263f1d4a45c53b2cae13dd36c5fc3832ef9b89772"
+  },
+  {
+    "design": "sha1_core",
+    "file": "rtl/sha1_core.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "3853fad98758d4f2aed32ee75193aa4b5461c27b60e1d89a0a02a4e222177ed4"
+  },
+  {
+    "design": "sha256_core_cep",
+    "file": "rtl/sha256_core_cep.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "88bfde3583d3f25a8553983ccbdc34f934e7467d84eed601da04ed788fb72e20"
+  },
+  {
+    "design": "sha256_k_constants",
+    "file": "rtl/sha256_k_constants.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "78a9600a6968eb0dc04a3a9fdc6329d3b503044b5a2561263b1cdab18f657007"
+  },
+  {
+    "design": "sha512_core",
+    "file": "rtl/sha512_core.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "4f01ed075906c1ea065c5565ad36f3da72c3c2a482c3defebd3dedc1d5b296ac"
+  },
+  {
+    "design": "siphash_core",
+    "file": "rtl/siphash_core.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "c6466092a120ac47255cc920c82eb0b83e221b97f79cbc9d4436686a5af3ac89"
+  },
+  {
+    "design": "tiny_aes_128",
+    "file": "rtl/tiny_aes_128.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "6507f2c74cb288e94ae51b2034b2669261893b39067bef3189b2f1a138a8ce52"
+  },
+  {
+    "design": "trng_debug_ctrl",
+    "file": "rtl/trng_debug_ctrl.v",
+    "cohort": "original_benchmarks",
+    "source_sha256": "9ee1ca6041d4dcc6f565c2a995261eaf75e604eb5f8fd4633044e7723c60ea00"
+  },
+  {
+    "design": "aes-128_pipelined_encryption",
+    "file": "rtl/aes-128_pipelined_encryption.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "98bbd22bc0038559968d5a790a0d2c3fa331ad8bca8d28f472b50c2fb47c46cc",
+    "source_name": "aes-128_pipelined_encryption",
+    "top": "Top_PipelinedCipher",
+    "project_url": "https://opencores.org/projects/aes-128_pipelined_encryption",
+    "source_url": "https://opencores.org/ocsvn/aes-128_pipelined_encryption/aes-128_pipelined_encryption/trunk",
+    "revision": "2"
+  },
+  {
+    "design": "aes_highthroughput_lowarea",
+    "file": "rtl/aes_highthroughput_lowarea.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "c855efdfcfc5f560ac400db16f9da608880ed42d703078591f8acd9f2a93b256",
+    "source_name": "aes_highthroughput_lowarea",
+    "top": "aes_top_example",
+    "project_url": "https://opencores.org/projects/aes_highthroughput_lowarea",
+    "source_url": "https://opencores.org/ocsvn/aes_highthroughput_lowarea/aes_highthroughput_lowarea/trunk",
+    "revision": "11"
+  },
+  {
+    "design": "ahb_m_wishbone_s",
+    "file": "rtl/ahb_m_wishbone_s.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "cbbb27ec685f9b7f54d375006495710318e01b6fa1bf0d86a42f6969b454d164",
+    "source_name": "ahb_m_wishbone_s",
+    "top": "AHB2WB",
+    "project_url": "https://opencores.org/projects/ahb_m_wishbone_s",
+    "source_url": "https://opencores.org/ocsvn/ahb_m_wishbone_s/ahb_m_wishbone_s/trunk",
+    "revision": "9"
+  },
+  {
+    "design": "apbtoaes128",
+    "file": "rtl/apbtoaes128.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "0588eb9a27399efb60c94f6d2a82aefdf66eb15c96acfd40fb4e728ed13cf04c",
+    "source_name": "apbtoaes128",
+    "top": "aes_ip",
+    "project_url": "https://opencores.org/projects/apbtoaes128",
+    "source_url": "https://opencores.org/ocsvn/apbtoaes128/apbtoaes128/trunk",
+    "revision": "18"
+  },
+  {
+    "design": "binary_to_bcd",
+    "file": "rtl/binary_to_bcd.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "885adc4aa551f2f4604a5bc474060226a9eb3736654966e502c79de13e9af1cd",
+    "source_name": "binary_to_bcd",
+    "top": "binary_to_bcd",
+    "project_url": "https://opencores.org/projects/binary_to_bcd",
+    "source_url": "http://opencores.org/ocsvn/binary_to_bcd/binary_to_bcd/trunk",
+    "revision": "7"
+  },
+  {
+    "design": "ca_prng",
+    "file": "rtl/ca_prng.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "13c297a19f4dce8c9acf6a59f22ed81530bc21f2031755fdd2405a3a5c187d7e",
+    "source_name": "ca_prng",
+    "top": "ca_prng",
+    "project_url": "https://opencores.org/projects/ca_prng",
+    "source_url": "http://opencores.org/ocsvn/ca_prng/ca_prng/trunk",
+    "revision": "4"
+  },
+  {
+    "design": "ecg",
+    "file": "rtl/ecg.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "fd8f69c0ec96f1aac089b781a5408c02327f6816fd897d1313b2c9c7c128c8e1",
+    "source_name": "ecg",
+    "top": "point_scalar_mult",
+    "project_url": "https://opencores.org/projects/ecg",
+    "source_url": "https://opencores.org/ocsvn/ecg/ecg/trunk",
+    "revision": "19"
+  },
+  {
+    "design": "freq_div",
+    "file": "rtl/freq_div.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "32f2ddb7f2f7a9068e891dcb9a26414e62764865588bc48dcfe8b6f6584c0ea8",
+    "source_name": "freq_div",
+    "top": "divider",
+    "project_url": "https://opencores.org/projects/freq_div",
+    "source_url": "https://opencores.org/ocsvn/freq_div/freq_div/trunk",
+    "revision": "5"
+  },
+  {
+    "design": "generic_fifos",
+    "file": "rtl/generic_fifos.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "5806fdfd11eb3ed272381648a55bca3efdfc7b5334112f3def8f474c1ea94ea0",
+    "source_name": "generic_fifos",
+    "top": "lfsr",
+    "project_url": "https://opencores.org/projects/generic_fifos",
+    "source_url": "http://opencores.org/ocsvn/generic_fifos/generic_fifos/trunk",
+    "revision": "9"
+  },
+  {
+    "design": "gng",
+    "file": "rtl/gng.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "fafcf8bd7c6c509f0bf47d339402c3476d67ac36d2b2c344b3ad94a052a55206",
+    "source_name": "gng",
+    "top": "gng",
+    "project_url": "https://opencores.org/projects/gng",
+    "source_url": "http://opencores.org/ocsvn/gng/gng/trunk",
+    "revision": "17"
+  },
+  {
+    "design": "gost28147-89",
+    "file": "rtl/gost28147-89.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "d49e7cf8e5b37de3d02c85127cff2cbeb7ebb1d1b0d3ff49ee1a9b79ad918780",
+    "source_name": "gost28147-89",
+    "top": "gost89_cfb_decrypt",
+    "project_url": "https://opencores.org/projects/gost28147-89",
+    "source_url": "https://opencores.org/ocsvn/gost28147-89/gost28147-89/trunk",
+    "revision": "5"
+  },
+  {
+    "design": "linkruncca",
+    "file": "rtl/linkruncca.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "624ee8511b64ccedbf8a9b77f3cdac0707ac16d706c9cc72df5c4a31f55fa3ea",
+    "source_name": "linkruncca",
+    "top": "LinkRunCCA",
+    "project_url": "https://opencores.org/projects/linkruncca",
+    "source_url": "https://opencores.org/ocsvn/linkruncca/linkruncca/trunk",
+    "revision": "8"
+  },
+  {
+    "design": "mips789",
+    "file": "rtl/mips789.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "b75d4de94079a71e48420f70bea0ffcec3f84304ae691a3c1d91c4c739c73393",
+    "source_name": "mips789",
+    "top": "mips_core",
+    "project_url": "https://opencores.org/projects/mips789",
+    "source_url": "http://opencores.org/ocsvn/mips789/mips789/trunk",
+    "revision": "65"
+  },
+  {
+    "design": "mmcfpgaconfig",
+    "file": "rtl/mmcfpgaconfig.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "0e6375665c8b4f9905158215198b532bf024742450d025b6fd455dcaaf8528a7",
+    "source_name": "mmcfpgaconfig",
+    "top": "xmsmmc_minimal",
+    "project_url": "https://opencores.org/projects/mmcfpgaconfig",
+    "source_url": "https://opencores.org/ocsvn/mmcfpgaconfig/mmcfpgaconfig/trunk",
+    "revision": "8"
+  },
+  {
+    "design": "mmuart",
+    "file": "rtl/mmuart.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "9c2bf6599fd37810513bc7035d8ff5aa6ba686000d9f79b7274f752a0ec97caf",
+    "source_name": "mmuart",
+    "top": "uart",
+    "project_url": "https://opencores.org/projects/mmuart",
+    "source_url": "https://opencores.org/ocsvn/mmuart/mmuart/trunk",
+    "revision": "3"
+  },
+  {
+    "design": "navre",
+    "file": "rtl/navre.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "53206dc24a7966baf3a183a2d28d9493c275dfe6401aadc7bbbf03f2dbb971b9",
+    "source_name": "navre",
+    "top": "softusb_navre",
+    "project_url": "https://opencores.org/projects/navre",
+    "source_url": "https://github.com/freecores/navre.git",
+    "revision": "851174a0a0545cf94bb47985ab1bc308a896ed4b"
+  },
+  {
+    "design": "nextz80",
+    "file": "rtl/nextz80.v",
+    "cohort": "datasets/opencores",
+    "source_sha256": "cf61c91d1bce2b55bc146f69870aaae386d1bfe5a94f2042300b60300aa9e8f3",
+    "source_name": "nextz80",
+    "top": "NextZ80",
+    "project_url": "https://opencores.org/projects/nextz80",
+    "source_url": "https://opencores.org/ocsvn/nextz80/nextz80/trunk",
+    "revision": "18"
+  },
+  {
+    "design": "pid_controller",
+    "file": "rtl/pid_controller.v",
+    "cohort": "datasets/opencores2",
+    "source_sha256": "0d859bdb45d8a96777d545a353be01ab43904c7bc41ad06158fe4622c6ed369e",
+    "source_name": "pid_controller",
+    "top": "PID",
+    "revision": "13",
+    "project_url": "https://opencores.org/projects/pid_controller",
+    "source_url": "https://opencores.org/ocsvn/pid_controller/pid_controller/trunk"
+  },
+  {
+    "design": "reed_solomon_decoder",
+    "file": "rtl/reed_solomon_decoder.v",
+    "cohort": "datasets/opencores2",
+    "source_sha256": "16b92e52ab3f924e71b058ce3fbc45fe3d0aed09973c34118b4993b437514156",
+    "source_name": "reed_solomon_decoder",
+    "top": "RS_dec",
+    "revision": "2d581673ad7d3a97bca63c674b867ec80db0e2c6",
+    "project_url": "https://opencores.org/projects/reed_solomon_decoder",
+    "source_url": "https://github.com/freecores/reed_solomon_decoder.git"
+  },
+  {
+    "design": "sha3",
+    "file": "rtl/sha3.v",
+    "cohort": "datasets/opencores2",
+    "source_sha256": "3a5b8169b65733f2bc79bf99425256134ffc2f399297c7b839779ce9af4e850c",
+    "source_name": "sha3",
+    "top": "keccak",
+    "revision": "c25a5befc75e8f8392fdbff040165428b2f54bfd",
+    "project_url": "https://opencores.org/projects/sha3",
+    "source_url": "https://github.com/freecores/sha3.git"
+  },
+  {
+    "design": "steelcore",
+    "file": "rtl/steelcore.v",
+    "cohort": "datasets/opencores2",
+    "source_sha256": "4e34a963a28b0925d68e86c6b0dfafa1964bb8d82d5ba3c21c5ff0071c2c1b88",
+    "source_name": "steelcore",
+    "top": "rvsteel_core",
+    "revision": "c83f2f08c6e7e1b6293933e54347877472aecf3e",
+    "project_url": "https://opencores.org/projects/steelcore",
+    "source_url": "https://github.com/rafaelcalcada/steel-core.git"
+  },
+  {
+    "design": "tiny_aes",
+    "file": "rtl/tiny_aes.v",
+    "cohort": "datasets/opencores2",
+    "source_sha256": "19cef26afe731f2c63eb107242a5e216e1916d9cfbe5a6867fd82fddc6cbf538",
+    "source_name": "tiny_aes",
+    "top": "aes_128",
+    "revision": "faf2afb2bcb6c3247c00d6bd7129b31b4fff91fb",
+    "project_url": "https://opencores.org/projects/tiny_aes",
+    "source_url": "https://github.com/freecores/tiny_aes.git"
+  },
+  {
+    "design": "dds_synthesizer",
+    "file": "rtl/dds_synthesizer.v",
+    "cohort": "verilog_ip_partial",
+    "source_sha256": "e09e61172117a10c5fcdcf492039dc48a557f8c1a5425788420932e6fd8fe621",
+    "source_name": "dds_synthesizer",
+    "top": "dds_synthesizer",
+    "revision": "sha256:e09e61172117a10c5fcdcf492039dc48a557f8c1a5425788420932e6fd8fe621",
+    "origin_note": "User-provided local RTL; no upstream source or licence inferred."
+  },
+  {
+    "design": "fir_filter",
+    "file": "rtl/fir_filter.v",
+    "cohort": "verilog_ip_partial",
+    "source_sha256": "c5e6f7eae02fa56f32103673c097b09eb9e8e6400db22a8674e35fef26e641a2",
+    "source_name": "fir_filter",
+    "top": "fir_filter",
+    "revision": "sha256:c5e6f7eae02fa56f32103673c097b09eb9e8e6400db22a8674e35fef26e641a2",
+    "origin_note": "User-provided local RTL; no upstream source or licence inferred."
+  },
+  {
+    "design": "generic_fifos_local",
+    "file": "rtl/generic_fifos_local.v",
+    "cohort": "verilog_ip_partial",
+    "source_sha256": "76a5d068a0d2e2a54965a6e44f831488a3d78b139c175bd0006ab4ba16a70559",
+    "source_name": "generic_fifos",
+    "top": "generic_fifos",
+    "revision": "sha256:76a5d068a0d2e2a54965a6e44f831488a3d78b139c175bd0006ab4ba16a70559",
+    "origin_note": "User-provided local RTL; no upstream source or licence inferred."
+  },
+  {
+    "design": "i2s_interface",
+    "file": "rtl/i2s_interface.v",
+    "cohort": "verilog_ip_partial",
+    "source_sha256": "fd95c2da3a83dd87c54b6cd62ab9ad153e3686c7efbd2962e1662be1d8b5e34b",
+    "source_name": "i2s_interface",
+    "top": "i2s_interface",
+    "revision": "sha256:fd95c2da3a83dd87c54b6cd62ab9ad153e3686c7efbd2962e1662be1d8b5e34b",
+    "origin_note": "User-provided local RTL; no upstream source or licence inferred."
+  },
+  {
+    "design": "ps2_keyboard_interface",
+    "file": "rtl/ps2_keyboard_interface.v",
+    "cohort": "verilog_ip_partial",
+    "source_sha256": "222b62f11ff35b61d54881eb4fbfcd856ecbe11540d750196979fe6524ec978d",
+    "source_name": "ps2_keyboard_interface",
+    "top": "ps2_keyboard_interface",
+    "revision": "sha256:222b62f11ff35b61d54881eb4fbfcd856ecbe11540d750196979fe6524ec978d",
+    "origin_note": "User-provided local RTL; no upstream source or licence inferred."
+  },
+  {
+    "design": "spi_master_slave",
+    "file": "rtl/spi_master_slave.v",
+    "cohort": "verilog_ip_partial",
+    "source_sha256": "8520a398ad841b005369d8fdafcc6db41e6def5769f56e68db37ea86c4c217e3",
+    "source_name": "spi_master_slave",
+    "top": "spi_master_slave",
+    "revision": "sha256:8520a398ad841b005369d8fdafcc6db41e6def5769f56e68db37ea86c4c217e3",
+    "origin_note": "User-provided local RTL; no upstream source or licence inferred."
+  },
+  {
+    "design": "uart_tx_basic",
+    "file": "rtl/uart_tx_basic.v",
+    "cohort": "verilog_ip_partial",
+    "source_sha256": "4c5b3429ab1a28e35cf87cccfc36261dd731dcb84ceaf0f39956c96de0370377",
+    "source_name": "uart_tx_basic",
+    "top": "uart_tx_basic",
+    "revision": "sha256:4c5b3429ab1a28e35cf87cccfc36261dd731dcb84ceaf0f39956c96de0370377",
+    "origin_note": "User-provided local RTL; no upstream source or licence inferred."
+  }
+]

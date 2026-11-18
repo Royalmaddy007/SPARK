@@ -1,0 +1,24 @@
+name: great_dac26
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - jinja2
+  - requests
+  - pyyaml
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - tabulate
+  - rich
+  - jsonschema
+  - networkx
+  - yosys
+  - iverilog
+  - subversion
+  - p7zip
+  - pip:
+      - pyverilog
+      - ollama

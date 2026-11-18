@@ -1,0 +1,9 @@
+{
+  "aes-128-ecb-encoder": [
+    "src",
+    "tb"
+  ],
+  "mod_mult_exp": [
+    "rtl"
+  ]
+}

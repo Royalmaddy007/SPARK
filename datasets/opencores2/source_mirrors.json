@@ -1,0 +1,61 @@
+{
+  "zipcpu": {
+    "url": "https://github.com/ZipCPU/zipcpu.git",
+    "reference": "https://opencores.org/projects/zipcpu"
+  },
+  "wb2axip": {
+    "url": "https://github.com/ZipCPU/wb2axip.git",
+    "reference": "https://opencores.org/projects/wb2axip"
+  },
+  "wbscope": {
+    "url": "https://github.com/ZipCPU/wbscope.git",
+    "reference": "https://opencores.org/projects/wbscope"
+  },
+  "wbuart32": {
+    "url": "https://github.com/ZipCPU/wbuart32.git",
+    "reference": "https://opencores.org/projects/wbuart32"
+  },
+  "openhmc": {
+    "url": "https://github.com/klyone/opencores-ip.git",
+    "branch": "memory_core_openhmc",
+    "reference": "https://github.com/klyone/opencores-ip/blob/master/README.md"
+  },
+  "open8_urisc": {
+    "url": "https://github.com/klyone/opencores-ip.git",
+    "branch": "processor_open8_urisc",
+    "reference": "https://github.com/klyone/opencores-ip/blob/master/README.md"
+  },
+  "simon_core": {
+    "url": "https://github.com/klyone/opencores-ip.git",
+    "branch": "crypto_core_simon_core",
+    "reference": "https://github.com/klyone/opencores-ip/blob/master/README.md"
+  },
+  "yanu": {
+    "url": "https://github.com/klyone/opencores-ip.git",
+    "branch": "communication_controller_yanu-uart_with_predictive_interrupt_events_on_rx-t",
+    "reference": "https://github.com/klyone/opencores-ip/blob/master/README.md"
+  },
+  "pulse_processing_algorithm": {
+    "url": "https://github.com/klyone/opencores-ip.git",
+    "branch": "other_general-purpose_pulse-processing_algorithm",
+    "reference": "https://github.com/klyone/opencores-ip/blob/master/README.md"
+  },
+  "s6soc": {
+    "url": "https://github.com/ZipCPU/s6soc.git",
+    "reference": "https://opencores.org/projects/s6soc"
+  },
+  "xulalx25soc": {
+    "url": "https://github.com/ZipCPU/xulalx25soc.git",
+    "reference": "https://opencores.org/projects/xulalx25soc"
+  },
+  "opl3_20": {
+    "url": "https://github.com/gtaylormb/opl3_fpga.git",
+    "reference": "https://opencores.org/projects/opl3_20"
+  },
+  "steelcore": {
+    "url": "https://github.com/rafaelcalcada/steel-core.git",
+    "reference": "https://opencores.org/projects/steelcore",
+    "branch": "v1.1",
+    "selection_note": "Pin the historical Steel release; the current repository default is renamed RVX and is not the requested benchmark."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "pid_controller": {
+    "files": [
+      "bench/wb_master.v"
+    ],
+    "repo_files": [
+      "testbenches/pid_controller_tb.v"
+    ],
+    "top": "PID_tb",
+    "cwd": "bench",
+    "include_dirs": [
+      "bench"
+    ],
+    "pass_regex": "TB_PASS PID scoreboard complete",
+    "fail_regex": "(?i)incorrect|mismatch|TB_FAIL",
+    "check_regex": "read correct value",
+    "minimum_checks": 1000,
+    "oracle": "Upstream independent arithmetic scoreboard, 1000 reads; only final completion marker added.",
+    "upstream_testbench_sha256": "5985ae3bcc550bed58b56cf0a64b65717b6f688def97f8c0e0b6a8112396b14d"
+  },
+  "pairing": {
+    "files": [],
+    "repo_files": [
+      "testbenches/pairing_tb.v"
+    ],
+    "top": "test_tate_pairing",
+    "cwd": "testbench",
+    "include_dirs": [
+      "rtl"
+    ],
+    "pass_regex": "TB_PASS pairing known vector",
+    "fail_regex": "TB_FAIL",
+    "oracle": "Unmodified upstream inputs and expected pairing vector; explicit pass/fail markers added.",
+    "upstream_testbench_sha256": "8600aa7a959d3ab8c12480215c3ab3f1d0eb3bfe01ed4d46fc4e0ec0d4dcd0f9"
+  },
+  "sha3": {
+    "files": [
+      "low_throughput_core/testbench/test_keccak.v"
+    ],
+    "top": "test_keccak",
+    "cwd": "low_throughput_core/testbench",
+    "pass_regex": "Good!",
+    "fail_regex": "(?m)^#\\s*E\\s*$",
+    "oracle": "Upstream low-throughput Keccak-512 known-answer tests (pre-FIPS SHA3 variant); original benchmark constants unchanged."
+  },
+  "tiny_aes": {
+    "files": [
+      "testbench/test_aes_128.v"
+    ],
+    "top": "test_aes_128",
+    "cwd": "testbench",
+    "pass_regex": "Good\\.",
+    "fail_regex": "(?m)^#\\s*E\\s*$",
+    "oracle": "Upstream AES-128 five known-answer vectors; other AES key sizes are not the selected benchmark top."
+  },
+  "reed_solomon_decoder": {
+    "files": [],
+    "repo_files": [
+      "testbenches/reed_solomon_decoder_tb.v"
+    ],
+    "top": "RS_dec_tb",
+    "cwd": "simulation",
+    "pass_regex": "TB_PASS RS checked 18800 bytes",
+    "fail_regex": "Error at out|Total Errors",
+    "assets": [
+      "simulation/input_RS_blocks",
+      "simulation/output_RS_blocks"
+    ],
+    "oracle": "Upstream 100 Reed-Solomon codewords with independent MATLAB-generated expected 18800 output bytes; only explicit PASS and $finish adaptation.",
+    "upstream_testbench_sha256": "f98d20a8a557aa67fbcafc728572d28030d973bf486095f4f51ecd07e142933f"
+  },
+  "steelcore": {
+    "files": [
+      "hardware/core/tests/verilator/unit_tests.v",
+      "hardware/ram/rvsteel_ram.v"
+    ],
+    "repo_files": [
+      "testbenches/steelcore_tb.sv"
+    ],
+    "top": "steel_modelsim_tb",
+    "cwd": "hardware/core/tests",
+    "pass_regex": "TB_PASS Steel checked 3748 signature words",
+    "fail_regex": "TB_FAIL",
+    "check_regex": "STEEL_CHECK",
+    "minimum_checks": 10,
+    "assets": [
+      "hardware/core/tests/unit_tests/programs/add-01.hex",
+      "hardware/core/tests/unit_tests/references/add-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/addi-01.hex",
+      "hardware/core/tests/unit_tests/references/addi-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/and-01.hex",
+      "hardware/core/tests/unit_tests/references/and-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/xor-01.hex",
+      "hardware/core/tests/unit_tests/references/xor-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/beq-01.hex",
+      "hardware/core/tests/unit_tests/references/beq-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/bne-01.hex",
+      "hardware/core/tests/unit_tests/references/bne-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/lw-align-01.hex",
+      "hardware/core/tests/unit_tests/references/lw-align-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/sw-align-01.hex",
+      "hardware/core/tests/unit_tests/references/sw-align-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/sll-01.hex",
+      "hardware/core/tests/unit_tests/references/sll-01.reference.hex",
+      "hardware/core/tests/unit_tests/programs/lui-01.hex",
+      "hardware/core/tests/unit_tests/references/lui-01.reference.hex"
+    ],
+    "oracle": "ModelSim adaptation of upstream Steel v1.1 CPU/RAM harness and independently supplied architectural reference signatures; ten arithmetic, logic, branch, load/store and shift programs."
+  }
+}

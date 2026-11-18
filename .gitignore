@@ -1,0 +1,44 @@
+# Python and local environment
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+/env/.stamp
+
+# Local tooling and vendor checkouts
+/.claude/
+/pdk/
+/examples/upstream/
+/tools/PSAT/
+/tools/opensta/
+/tools/HIPR/
+/tools/xls/
+/tools/ghdl/
+/tools/runtime-deps/
+/tools/paper-tex/
+
+# Generated runs and legacy dataset workspaces
+/pipeline/
+/logs/
+/datasets/*/*
+!/datasets/opencores/cores.txt
+!/datasets/opencores/requested_cores.txt
+!/datasets/opencores/overrides.json
+!/datasets/opencores/source_mirrors.json
+!/datasets/opencores/source_paths.json
+!/datasets/opencores2/cores.txt
+!/datasets/opencores2/requested_cores.txt
+!/datasets/opencores2/overrides.json
+!/datasets/opencores2/source_mirrors.json
+!/datasets/opencores2/testbenches.json
+/verilog_ip_partial/
+/great_dac_final_output.txt
+
+# Local paper drafts, source bundles, and rendered documents
+/paper/
+/spark.tex
+/*.pdf
+/*.zip

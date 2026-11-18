@@ -1,0 +1,534 @@
+{
+  "description": "Verilog example corpus for the GREAT/DAC-26 GenAI RTL redaction pipeline. All files are unmodified upstream sources, redistributed under their original licences (see examples/licenses/).",
+  "retrieved_on": "2026-09-09",
+  "designs": [
+    {
+      "file": "examples/rtl/aes_sbox.v",
+      "upstream_repository": "secworks/aes",
+      "upstream_url": "https://github.com/secworks/aes",
+      "upstream_path": "src/rtl/aes_sbox.v",
+      "commit": "80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc",
+      "permalink": "https://github.com/secworks/aes/blob/80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc/src/rtl/aes_sbox.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-aes.LICENSE",
+      "copyright": "Joachim Strömbergson",
+      "description": "AES S-box as a 256-entry combinational LUT. The S-box table itself is the crown jewel: it is a published constant, but its literal presence instantly identifies the design as AES.",
+      "security_features": [
+        "crypto S-box constants",
+        "combinational LUT"
+      ]
+    },
+    {
+      "file": "examples/rtl/aes_key_mem.v",
+      "upstream_repository": "secworks/aes",
+      "upstream_url": "https://github.com/secworks/aes",
+      "upstream_path": "src/rtl/aes_key_mem.v",
+      "commit": "80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc",
+      "permalink": "https://github.com/secworks/aes/blob/80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc/src/rtl/aes_key_mem.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-aes.LICENSE",
+      "copyright": "Joachim Strömbergson",
+      "description": "AES-128/256 key expansion memory with a round-key FSM and rcon generation. Holds the live key material and a named FSM (CTRL_IDLE/CTRL_INIT/CTRL_GENERATE/CTRL_DONE).",
+      "security_features": [
+        "key storage",
+        "FSM localparams",
+        "rcon constants",
+        "key compare"
+      ]
+    },
+    {
+      "file": "examples/rtl/sha256_k_constants.v",
+      "upstream_repository": "secworks/sha256",
+      "upstream_url": "https://github.com/secworks/sha256",
+      "upstream_path": "src/rtl/sha256_k_constants.v",
+      "commit": "837c5cc396f001d18f2c765721c585716eb439ae",
+      "permalink": "https://github.com/secworks/sha256/blob/837c5cc396f001d18f2c765721c585716eb439ae/src/rtl/sha256_k_constants.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-sha256.LICENSE",
+      "copyright": "Joachim Strömbergson",
+      "description": "SHA-256 round-constant ROM: 64 x 32-bit K constants selected by round index. A pure algebraic-constant-masking target (Step 4c).",
+      "security_features": [
+        "algorithm-identifying constants",
+        "case-based ROM"
+      ]
+    },
+    {
+      "file": "examples/rtl/siphash_core.v",
+      "upstream_repository": "secworks/siphash",
+      "upstream_url": "https://github.com/secworks/siphash",
+      "upstream_path": "src/rtl/siphash_core.v",
+      "commit": "25f5482f4ecbf1ab60a7b5e5dd7e2d7f56b0aa6c",
+      "permalink": "https://github.com/secworks/siphash/blob/25f5482f4ecbf1ab60a7b5e5dd7e2d7f56b0aa6c/src/rtl/siphash_core.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-siphash.LICENSE",
+      "copyright": "Secworks Sweden AB",
+      "description": "SipHash-2-4 keyed-hash core: 128-bit key register, ARX rounds, initialisation constants and a multi-state control FSM.",
+      "security_features": [
+        "128-bit key register",
+        "magic init constants",
+        "FSM",
+        "ARX adders"
+      ]
+    },
+    {
+      "file": "examples/rtl/chacha_qr.v",
+      "upstream_repository": "secworks/chacha",
+      "upstream_url": "https://github.com/secworks/chacha",
+      "upstream_path": "src/rtl/chacha_qr.v",
+      "commit": "7eaba360df9fed9fc2db98d5f3df81cf01e5b604",
+      "permalink": "https://github.com/secworks/chacha/blob/7eaba360df9fed9fc2db98d5f3df81cf01e5b604/src/rtl/chacha_qr.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-chacha.LICENSE",
+      "copyright": "Joachim Strömbergson",
+      "description": "ChaCha quarter-round: four 32-bit modular adders, XORs and rotations. Chosen as the arithmetic structural-decomposition target (Step 4h).",
+      "security_features": [
+        "32-bit adders",
+        "rotation constants"
+      ]
+    },
+    {
+      "file": "examples/archive/keywrap_core.v",
+      "upstream_repository": "assured/keywrap",
+      "upstream_url": "https://github.com/secworks/keywrap",
+      "upstream_path": "src/rtl/keywrap_core.v",
+      "commit": "547e2a181abf3e5fc7624a1e56a47f4239bbf4b3",
+      "permalink": "https://github.com/secworks/keywrap/blob/547e2a181abf3e5fc7624a1e56a47f4239bbf4b3/src/rtl/keywrap_core.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/assured-keywrap.LICENSE",
+      "copyright": "Assured AB / Joachim Strömbergson",
+      "description": "RFC-3394 AES key-wrap core: contains the A0 integrity-check constant 64'hA6A6A6A6A6A6A6A6 and the unwrap validity comparison — a textbook comparison-chain-obfuscation target (Step 4d).",
+      "security_features": [
+        "integrity check constant",
+        "equality comparison",
+        "unwrap validity flag"
+      ],
+      "known_issue": "This upstream file is a work in progress: it references several signals (tmp_read_data, tmp_error, key0_reg, ...) that it never declares, so it does not elaborate standalone under Icarus even with every sibling module supplied. It is deliberately retained in the corpus because it exercises the pipeline's advisory-mode path -- Phase 4 logs 'annotated_input_does_not_compile', downgrades the per-step syntax gate to advisory, and still produces a transformed deliverable, and Phase 5 reports the resulting FAIL honestly rather than hiding it."
+    },
+    {
+      "file": "examples/rtl/trng_debug_ctrl.v",
+      "upstream_repository": "secworks/trng",
+      "upstream_url": "https://github.com/secworks/trng",
+      "upstream_path": "src/rtl/trng_debug_ctrl.v",
+      "commit": "3dd45d9c862a499201d9b734629641da685dbe43",
+      "permalink": "https://github.com/secworks/trng/blob/3dd45d9c862a499201d9b734629641da685dbe43/src/rtl/trng_debug_ctrl.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-trng.LICENSE",
+      "copyright": "Joachim Strömbergson",
+      "description": "TRNG debug/observability access-control block. Gates raw entropy onto a debug port under an enable — a privilege/access-control cone (MED/HIGH boundary logic).",
+      "security_features": [
+        "debug access gating",
+        "privilege logic"
+      ]
+    },
+    {
+      "file": "examples/rtl/tiny_aes_128.v",
+      "upstream_repository": "freecores/tiny_aes",
+      "upstream_url": "https://github.com/freecores/tiny_aes",
+      "upstream_path": "rtl/aes_128.v",
+      "commit": "faf2afb2bcb6c3247c00d6bd7129b31b4fff91fb",
+      "permalink": "https://github.com/freecores/tiny_aes/blob/faf2afb2bcb6c3247c00d6bd7129b31b4fff91fb/rtl/aes_128.v",
+      "license": "Apache-2.0",
+      "license_file": "examples/licenses/freecores-tiny_aes.LICENSE",
+      "copyright": "Homer Hsing",
+      "description": "Compact 10-round AES-128 encryption pipeline with inline round-key expansion. Second, independent AES implementation used to check that the pipeline is not over-fitted to one coding style.",
+      "security_features": [
+        "AES round pipeline",
+        "inline key expansion",
+        "rcon constants"
+      ]
+    },
+    {
+      "file": "examples/rtl/sha1_core.v",
+      "upstream_repository": "secworks/sha1",
+      "upstream_url": "https://github.com/secworks/sha1",
+      "upstream_path": "src/rtl/sha1_core.v",
+      "commit": "50f82f4ca2f8194fd47d8360270ac7dd141d53d1",
+      "permalink": "https://github.com/secworks/sha1/blob/50f82f4ca2f8194fd47d8360270ac7dd141d53d1/src/rtl/sha1_core.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-sha1.LICENSE",
+      "copyright": "Joachim Strömbergson / Secworks Sweden AB",
+      "description": "SHA-1 compression-function core: a named round FSM (CTRL_IDLE/CTRL_ROUNDS/CTRL_DONE), a 512-bit message schedule (sha1_w_mem), the five 32-bit initial-hash constants H0..H4 and the four round constants K. The initial-hash and round constants are the crown jewels — they identify the design as SHA-1 outright.",
+      "security_features": [
+        "algorithm-identifying constants",
+        "round FSM",
+        "message schedule",
+        "hash datapath"
+      ]
+    },
+    {
+      "file": "examples/rtl/blake2s_core.v",
+      "upstream_repository": "secworks/blake2s",
+      "upstream_url": "https://github.com/secworks/blake2s",
+      "upstream_path": "src/rtl/blake2s_core.v",
+      "commit": "dbecf482a6670fe0872621a8b25bf5b48efd9051",
+      "permalink": "https://github.com/secworks/blake2s/blob/dbecf482a6670fe0872621a8b25bf5b48efd9051/src/rtl/blake2s_core.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/assured-blake2s.LICENSE",
+      "copyright": "Assured AB / Joachim Strömbergson",
+      "description": "BLAKE2s hashing core: the quarter-round G mixing function (blake2s_G), the message-word permutation select (blake2s_m_select), the eight IV constants and the parameter block, driven by a compression FSM. The IV constants plus the G-function rotation amounts are the crown jewels.",
+      "security_features": [
+        "IV constants",
+        "G mixing function",
+        "message permutation",
+        "compression FSM"
+      ]
+    },
+    {
+      "file": "examples/rtl/poly1305_core.v",
+      "upstream_repository": "secworks/poly1305",
+      "upstream_url": "https://github.com/secworks/poly1305",
+      "upstream_path": "src/rtl/poly1305_core.v",
+      "commit": "7c950671355467ee9c28909f27a990f4b7fd10ec",
+      "permalink": "https://github.com/secworks/poly1305/blob/7c950671355467ee9c28909f27a990f4b7fd10ec/src/rtl/poly1305_core.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-poly1305.LICENSE",
+      "copyright": "Joachim Strömbergson / Secworks Sweden AB",
+      "description": "Poly1305 one-time-MAC core: a 130-bit modular multiply-accumulate over the block (poly1305_pblock feeding poly1305_mulacc) and the final 2^130-5 reduction (poly1305_final). Holds the r/s key material and its clamping mask; the prime-field reduction constants and the key clamp are the crown jewels.",
+      "security_features": [
+        "key material + clamp",
+        "prime-field reduction constants",
+        "modular multiply-accumulate",
+        "MAC FSM"
+      ]
+    },
+    {
+      "file": "examples/rtl/sha512_core.v",
+      "upstream_repository": "secworks/sha512",
+      "upstream_url": "https://github.com/secworks/sha512",
+      "upstream_path": "src/rtl/sha512_core.v",
+      "commit": "e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd",
+      "permalink": "https://github.com/secworks/sha512/blob/e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd/src/rtl/sha512_core.v",
+      "license": "BSD-2-Clause",
+      "license_file": "examples/licenses/secworks-sha512.LICENSE",
+      "copyright": "Joachim Strömbergson / Secworks Sweden AB",
+      "description": "SHA-512 compression-function core (also covers SHA-384/512-224/512-256 via mode): an 80-entry message schedule (sha512_w_mem), the 80x64-bit round-constant ROM (sha512_k_constants) and the mode-selected initial-hash constants (sha512_h_constants), sequenced by a round FSM. The round-constant ROM and init constants are the crown jewels.",
+      "security_features": [
+        "round-constant ROM",
+        "mode-selected init constants",
+        "message schedule",
+        "round FSM"
+      ]
+    },
+    {
+      "file": "examples/deps/cep_des3_crp.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/crp.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/crp.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "c2d4a5bfda1a877f2926cb98d4e8e60e4db5cbe3c888276c896c771e8a945c0a",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/rtl/des3.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/des3.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/des3.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "7343e81dda9e5a3f5179b7b899375a62f9496dee44c0251e23ff440cd7a8e57e",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_key_sel3.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/key_sel3.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/key_sel3.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "abb930586ce85da8bbf3577a62b1f544e01bc325ee3543926eeeb462cb9a313f",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox1.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox1.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox1.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "01f36d3d68a8ca0cc80891d12e8ab5d3a03513383e15b7fac738e50ccd05ae88",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox2.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox2.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox2.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "c5616a89434a55ae57639996da8a297a7d0d5d7058f13a6f223b2ef28c6df331",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox3.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox3.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox3.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "86b0525c315efbbe2695a66a6a9e032e7aca29c5a7a91c9920d2ce5b8c800528",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox4.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox4.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox4.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "0a2c3ebcb7dd519d42f20267377ae0ce40983851cfa20a995835816a18dc1fc6",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox5.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox5.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox5.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "d2e9cdee380917ae955fdf32dc652d404185ef9ea2407ab7357ed856e7da2435",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox6.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox6.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox6.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "a6fef682ef3abacf7bbfba5385c7807596ea7a6d100e3617533d9f35d3f7e2a9",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox7.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox7.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox7.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "b514543d903dc4bf8e9a5fea2173928aa4ea491e6648382ce5725c079e759078",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_des3_sbox8.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/des3/sbox8.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/des3/sbox8.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "db28ed6b99bb706fd29656bdf30532ef589d3280a6da0854f5b8a914fa5538e0",
+      "description": "MIT-CEP des3; source module names unchanged"
+    },
+    {
+      "file": "examples/rtl/sha256_core_cep.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/sha256/sha256.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/sha256/sha256.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "88bfde3583d3f25a8553983ccbdc34f934e7467d84eed601da04ed788fb72e20",
+      "description": "MIT-CEP sha256; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_sha256_sha256_k_constants.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/sha256/sha256_k_constants.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/sha256/sha256_k_constants.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "afbc27d469cca008d5f430c7e9967c10bf2387b4ee1f5875b63da0bd9b8b18ae",
+      "description": "MIT-CEP sha256; source module names unchanged"
+    },
+    {
+      "file": "examples/deps/cep_sha256_sha256_w_mem.v",
+      "upstream_repository": "mit-ll/CEP",
+      "upstream_url": "https://github.com/mit-ll/CEP",
+      "upstream_path": "generators/mitll-blocks/src/main/resources/vsrc/sha256/sha256_w_mem.v",
+      "commit": "bcc812336910a095e6cb48a50ac123872fdac93f",
+      "permalink": "https://github.com/mit-ll/CEP/blob/bcc812336910a095e6cb48a50ac123872fdac93f/generators/mitll-blocks/src/main/resources/vsrc/sha256/sha256_w_mem.v",
+      "license": "see preserved per-file copyright and CEP component licenses",
+      "license_file": "examples/licenses/mit-cep.LICENSE.Components.md",
+      "sha256": "62ad8c4b0b59b8094512697cff546f07d2d8509884edd3bb6523c3792e3a50fb",
+      "description": "MIT-CEP sha256; source module names unchanged"
+    }
+  ],
+  "dependencies_note": "Files under examples/deps/ are NOT redaction targets. They are unmodified upstream sibling modules required to elaborate two of the targets (keywrap_core.v and tiny_aes_128.v) so that Phase 5 can simulate and formally verify them. They are supplied to iverilog/yosys as context only and are never transformed or shipped.",
+  "dependencies": [
+    {
+      "file": "examples/deps/table.v",
+      "upstream_repository": "freecores/tiny_aes",
+      "upstream_url": "https://github.com/freecores/tiny_aes",
+      "upstream_path": "rtl/table.v",
+      "commit": "faf2afb2bcb6c3247c00d6bd7129b31b4fff91fb",
+      "permalink": "https://github.com/freecores/tiny_aes/blob/faf2afb2bcb6c3247c00d6bd7129b31b4fff91fb/rtl/table.v",
+      "license": "Apache-2.0",
+      "role": "S-box / T-table lookup modules (S4, T1-T4) instantiated by tiny_aes_128.v"
+    },
+    {
+      "file": "examples/deps/round.v",
+      "upstream_repository": "freecores/tiny_aes",
+      "upstream_url": "https://github.com/freecores/tiny_aes",
+      "upstream_path": "rtl/round.v",
+      "commit": "faf2afb2bcb6c3247c00d6bd7129b31b4fff91fb",
+      "permalink": "https://github.com/freecores/tiny_aes/blob/faf2afb2bcb6c3247c00d6bd7129b31b4fff91fb/rtl/round.v",
+      "license": "Apache-2.0",
+      "role": "one_round / final_round datapath stages instantiated by tiny_aes_128.v"
+    },
+    {
+      "file": "examples/deps/aes_core.v",
+      "upstream_repository": "secworks/aes",
+      "upstream_url": "https://github.com/secworks/aes",
+      "upstream_path": "src/rtl/aes_core.v",
+      "commit": "80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc",
+      "permalink": "https://github.com/secworks/aes/blob/80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc/src/rtl/aes_core.v",
+      "license": "BSD-2-Clause",
+      "role": "AES core instantiated by keywrap_core.v"
+    },
+    {
+      "file": "examples/deps/aes_encipher_block.v",
+      "upstream_repository": "secworks/aes",
+      "upstream_url": "https://github.com/secworks/aes",
+      "upstream_path": "src/rtl/aes_encipher_block.v",
+      "commit": "80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc",
+      "permalink": "https://github.com/secworks/aes/blob/80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc/src/rtl/aes_encipher_block.v",
+      "license": "BSD-2-Clause",
+      "role": "encryption datapath instantiated by aes_core.v"
+    },
+    {
+      "file": "examples/deps/aes_decipher_block.v",
+      "upstream_repository": "secworks/aes",
+      "upstream_url": "https://github.com/secworks/aes",
+      "upstream_path": "src/rtl/aes_decipher_block.v",
+      "commit": "80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc",
+      "permalink": "https://github.com/secworks/aes/blob/80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc/src/rtl/aes_decipher_block.v",
+      "license": "BSD-2-Clause",
+      "role": "decryption datapath instantiated by aes_core.v"
+    },
+    {
+      "file": "examples/deps/aes_inv_sbox.v",
+      "upstream_repository": "secworks/aes",
+      "upstream_url": "https://github.com/secworks/aes",
+      "upstream_path": "src/rtl/aes_inv_sbox.v",
+      "commit": "80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc",
+      "permalink": "https://github.com/secworks/aes/blob/80dc4718e1dcbbdb4b0dd1bdb393d8f7b98981dc/src/rtl/aes_inv_sbox.v",
+      "license": "BSD-2-Clause",
+      "role": "inverse S-box instantiated by aes_decipher_block.v"
+    },
+    {
+      "file": "examples/deps/sha1_w_mem.v",
+      "upstream_repository": "secworks/sha1",
+      "upstream_url": "https://github.com/secworks/sha1",
+      "upstream_path": "src/rtl/sha1_w_mem.v",
+      "commit": "50f82f4ca2f8194fd47d8360270ac7dd141d53d1",
+      "permalink": "https://github.com/secworks/sha1/blob/50f82f4ca2f8194fd47d8360270ac7dd141d53d1/src/rtl/sha1_w_mem.v",
+      "license": "BSD-2-Clause",
+      "role": "512-bit message-schedule (W) memory instantiated by sha1_core.v"
+    },
+    {
+      "file": "examples/deps/blake2s_G.v",
+      "upstream_repository": "secworks/blake2s",
+      "upstream_url": "https://github.com/secworks/blake2s",
+      "upstream_path": "src/rtl/blake2s_G.v",
+      "commit": "dbecf482a6670fe0872621a8b25bf5b48efd9051",
+      "permalink": "https://github.com/secworks/blake2s/blob/dbecf482a6670fe0872621a8b25bf5b48efd9051/src/rtl/blake2s_G.v",
+      "license": "BSD-2-Clause",
+      "role": "quarter-round G mixing function instantiated by blake2s_core.v"
+    },
+    {
+      "file": "examples/deps/blake2s_m_select.v",
+      "upstream_repository": "secworks/blake2s",
+      "upstream_url": "https://github.com/secworks/blake2s",
+      "upstream_path": "src/rtl/blake2s_m_select.v",
+      "commit": "dbecf482a6670fe0872621a8b25bf5b48efd9051",
+      "permalink": "https://github.com/secworks/blake2s/blob/dbecf482a6670fe0872621a8b25bf5b48efd9051/src/rtl/blake2s_m_select.v",
+      "license": "BSD-2-Clause",
+      "role": "message-word permutation select instantiated by blake2s_core.v"
+    },
+    {
+      "file": "examples/deps/poly1305_pblock.v",
+      "upstream_repository": "secworks/poly1305",
+      "upstream_url": "https://github.com/secworks/poly1305",
+      "upstream_path": "src/rtl/poly1305_pblock.v",
+      "commit": "7c950671355467ee9c28909f27a990f4b7fd10ec",
+      "permalink": "https://github.com/secworks/poly1305/blob/7c950671355467ee9c28909f27a990f4b7fd10ec/src/rtl/poly1305_pblock.v",
+      "license": "BSD-2-Clause",
+      "role": "per-block multiply stage (instantiates poly1305_mulacc) instantiated by poly1305_core.v"
+    },
+    {
+      "file": "examples/deps/poly1305_mulacc.v",
+      "upstream_repository": "secworks/poly1305",
+      "upstream_url": "https://github.com/secworks/poly1305",
+      "upstream_path": "src/rtl/poly1305_mulacc.v",
+      "commit": "7c950671355467ee9c28909f27a990f4b7fd10ec",
+      "permalink": "https://github.com/secworks/poly1305/blob/7c950671355467ee9c28909f27a990f4b7fd10ec/src/rtl/poly1305_mulacc.v",
+      "license": "BSD-2-Clause",
+      "role": "multiply-accumulate unit instantiated by poly1305_pblock.v"
+    },
+    {
+      "file": "examples/deps/poly1305_final.v",
+      "upstream_repository": "secworks/poly1305",
+      "upstream_url": "https://github.com/secworks/poly1305",
+      "upstream_path": "src/rtl/poly1305_final.v",
+      "commit": "7c950671355467ee9c28909f27a990f4b7fd10ec",
+      "permalink": "https://github.com/secworks/poly1305/blob/7c950671355467ee9c28909f27a990f4b7fd10ec/src/rtl/poly1305_final.v",
+      "license": "BSD-2-Clause",
+      "role": "final 2^130-5 reduction instantiated by poly1305_core.v"
+    },
+    {
+      "file": "examples/deps/sha512_w_mem.v",
+      "upstream_repository": "secworks/sha512",
+      "upstream_url": "https://github.com/secworks/sha512",
+      "upstream_path": "src/rtl/sha512_w_mem.v",
+      "commit": "e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd",
+      "permalink": "https://github.com/secworks/sha512/blob/e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd/src/rtl/sha512_w_mem.v",
+      "license": "BSD-2-Clause",
+      "role": "80-entry message-schedule (W) memory instantiated by sha512_core.v"
+    },
+    {
+      "file": "examples/deps/sha512_k_constants.v",
+      "upstream_repository": "secworks/sha512",
+      "upstream_url": "https://github.com/secworks/sha512",
+      "upstream_path": "src/rtl/sha512_k_constants.v",
+      "commit": "e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd",
+      "permalink": "https://github.com/secworks/sha512/blob/e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd/src/rtl/sha512_k_constants.v",
+      "license": "BSD-2-Clause",
+      "role": "80x64-bit round-constant ROM instantiated by sha512_core.v"
+    },
+    {
+      "file": "examples/deps/sha512_h_constants.v",
+      "upstream_repository": "secworks/sha512",
+      "upstream_url": "https://github.com/secworks/sha512",
+      "upstream_path": "src/rtl/sha512_h_constants.v",
+      "commit": "e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd",
+      "permalink": "https://github.com/secworks/sha512/blob/e4cdf33418a3aa95cee25e1f0b1d8a6ede51c1bd/src/rtl/sha512_h_constants.v",
+      "license": "BSD-2-Clause",
+      "role": "mode-selected initial-hash constants instantiated by sha512_core.v"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "openmsp430": {
+    "source_dirs": [
+      "core/rtl/verilog"
+    ],
+    "top": "openMSP430"
+  },
+  "ps2": {
+    "source_dirs": [
+      "rtl/verilog"
+    ],
+    "top": "ps2"
+  },
+  "sha3": {
+    "source_dirs": [
+      "low_throughput_core/rtl"
+    ],
+    "top": "keccak"
+  },
+  "tiny_aes": {
+    "source_dirs": [
+      "rtl"
+    ],
+    "top": "aes_128"
+  },
+  "scalable_arbiter": {
+    "files": [
+      "rtl/verilog/arbiter.v"
+    ],
+    "top": "arbiter"
+  },
+  "spi": {
+    "source_dirs": [
+      "rtl/verilog"
+    ],
+    "top": "spi_top"
+  },
+  "steelcore": {
+    "files": [
+      "hardware/core/rvsteel_core.v"
+    ],
+    "top": "rvsteel_core"
+  },
+  "openhmc": {
+    "source_dirs": [
+      "openHMC/rtl"
+    ],
+    "include_dirs": [
+      "openHMC/rtl/include"
+    ],
+    "top": "openhmc_top"
+  }
+}

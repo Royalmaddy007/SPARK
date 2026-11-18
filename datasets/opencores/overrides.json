@@ -1,0 +1,7 @@
+{
+  "68hc05": {
+    "ghdl_flags": [
+      "--latches"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "a-z80": {
+    "url": "https://github.com/gdevic/A-Z80.git",
+    "reference": "https://opencores.org/websvn/filedetails?path=%2Fa-z80%2Ftrunk%2Fdocs%2FA-Z80_UsersGuide.pdf&repname=a-z80"
+  },
+  "hf-risc": {
+    "url": "https://github.com/sjohann81/hf-risc.git",
+    "reference": "https://opencores.org/projects/hf-risc"
+  },
+  "biriscv": {
+    "url": "https://github.com/ultraembedded/biriscv.git",
+    "reference": "https://opencores.org/projects/biriscv"
+  }
+}
